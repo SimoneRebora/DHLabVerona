@@ -37,7 +37,7 @@ If you want to clone a repository by somebody else (or that you have created), y
 
 ### 2.1 Example
 
-If you want to clone **this** GitHub repository, you need to write:
+If you want to clone [this GitHub repository](https://github.com/SimoneRebora/GitHubVerona2022), you need to write:
 
 `git clone https://github.com/SimoneRebora/GitHubVerona2022.git`
 
