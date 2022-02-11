@@ -28,4 +28,4 @@ Main topics:
 
 ## Details
 
-Course held at the **University of Verona** in 2022. All details [here](https://www.corsi.univr.it/?ent=cs&aa=2021%2F2022&codiceCs=L23&codins=4S008112&discr=&discrCd=&id=904&menu=Studiare&tab=Insegnamenti&lang=en).
+Course held at the *University of Verona* in 2022. All details [here](https://www.corsi.univr.it/?ent=cs&aa=2021%2F2022&codiceCs=L23&codins=4S008112&discr=&discrCd=&id=904&menu=Studiare&tab=Insegnamenti&lang=en).
