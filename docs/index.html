@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- CUSTOMIZE THIS! -->
+<title>Advanced Digital Humanities Lab</title>
+<meta name="author" content="Simone Rebora">
+<!-- END -->
+<meta name="description" content="Slides">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+<link rel="stylesheet" href="css/reveal.css">
+<link rel="stylesheet" href="css/theme/simple.css" id="theme">
+<!-- Code syntax highlighting -->
+<link rel="stylesheet" href="lib/css/zenburn.css">
+<!-- Printing and PDF exports -->
+<script>
+var link = document.createElement( 'link' );
+link.rel = 'stylesheet';
+link.type = 'text/css';
+link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+document.getElementsByTagName( 'head' )[0].appendChild( link );
+</script>
+<!--[if lt IE 9]>
+<script src="lib/js/html5shiv.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<div class="reveal">
+<div class="slides">
+<section data-markdown="" data-separator="^\n---\n" data-separator-vertical="^\n--\n" data-charset="utf-8">
+<script type="text/template">
+
+<!-- THIS IS WHERE THE CONTENT GOES! -->
+<!-- Any section element inside of this container is displayed as a slide -->
+
+
+# Advanced Digital Humanities Lab 
+<br/>
+<br/>
+## Simone Rebora
+<br/>
+<br/>
+<br/>
+<br/>
+*University of Verona*
+<br/>
+<br/>
+<img height="100" data-src="img/Univr_nuovo_sigillo.jpg"></img>
+
+
+---
+## Overview
+<br/>
+- Text analysis  
+- Data visualisation
+- Programming languages: R and Python
+- Case study: Digital Social Reading 
+<br/>
+GitHub repository:  
+[github.com/SimoneRebora/DHLabVerona](https://github.com/SimoneRebora/DHLabVerona)
+
+--
+## Program 
+<br/>
+Nine weeks, eight subjects:
+- introduction to the tools (GitHub and R programming)
+- web scraping
+- stylometry
+- sentiment analysis
+- topic modeling
+- machine learning
+- maps
+- networks
+
+--
+## Exam 
+<br/>
+Evaluation of a project, which will have to be published *on the GitHub platform.*
+
+
+
+---
+# GitHub
+
+--
+## What is GitHub? 
+<br/>
+- not just a place, but a community
+- a place where to store documents and scripts
+- a place where to share and work together
+
+--
+## Let's explore GitHub 
+
+...starting from [my GitHub profile](https://github.com/SimoneRebora)
+
+--
+## First activity
+
+Create your own GitHub profile!
+- browse to github.com
+- click on Sign Up!
+- copy/paste your profile URL on the Moodle
+<br/>
+<br/>
+<img height="350" data-src="img/GitHub_signup.png"></img>
+
+--
+## Second activity
+
+Create a GitHub repository
+- define title, visibility, license...
+- update the README.md file using markdown syntax<!-- .element: class="fragment" data-fragment-index="1" -->
+    - [markdown cheat-sheet](https://www.markdownguide.org/cheat-sheet/)<!-- .element: class="fragment" data-fragment-index="1" -->
+- create a file online<!-- .element: class="fragment" data-fragment-index="2" -->
+- update a file from your computer<!-- .element: class="fragment" data-fragment-index="3" -->
+- change visibility<!-- .element: class="fragment" data-fragment-index="4" -->
+
+--
+## Third activity
+
+Fork a repository
+- fork *this* repository into your GitHub account
+<br/>
+[github.com/SimoneRebora/DHLabVerona](https://github.com/SimoneRebora/DHLabVerona)
+
+--
+## Using GitHub with Git 
+<br/>
+The goal: learn how to use the [Git](https://git-scm.com/) version-control language  
+(...which **is not** GitHub!)
+<br/>
+<br/>
+<img height="250" data-src="img/Git-logo.png"></img>
+
+
+--
+## How does GitHub work? 
+<br/>
+<img height="550" data-src="img/Git-push-pull.png"></img>
+
+
+
+--
+## First activity
+Get acquainted with Git and command line
+- browse your computer to reach your Desktop
+- clone your repository into it
+
+
+--
+## Advanced activities
+- Clone a repository
+- Pull changes
+- Push changes
+
+You can find a simple tutorial [here](https://github.com/SimoneRebora/DHLabVerona/blob/main/tutorials/git_commands.md)
+
+--
+## Last activity
+<br/>
+Create a webpage using GitHub
+<br/>
+<br/>
+You can find a (very simple) tutorial [here](https://github.com/SimoneRebora/DHLabVerona/blob/main/tutorials/webpage_creation.md)
+
+
+</script>
+</section>
+
+
+
+<!-- DON'T TOUCH UNLESS YOU KNOW WHAT YOU'RE DOING :-) -->
+</div>
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+<script>
+// Full list of configuration options available at:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+    controls: true,
+    progress: true,
+    slideNumber: true,
+    history: true,
+    center: true,
+    transition: 'slide', // none/fade/slide/convex/concave/zoom
+    // Optional reveal.js plugins
+    dependencies: [
+        { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+        { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+        { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+        { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+        { src: 'plugin/zoom-js/zoom.js', async: true },
+        { src: 'plugin/notes/notes.js', async: true }
+        ]
+    });
+</script>
+</body>
+</html>
