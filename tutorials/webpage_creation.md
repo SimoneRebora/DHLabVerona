@@ -1,6 +1,6 @@
 # Make a webpage using GitHub
 
-It's very easy! You just need to:
+It's very easy! You just need to: 
 
 1. Create an *html* page (I'm not here to teach you how, but you can find one ready [here](https://raw.githubusercontent.com/SimoneRebora/GitHubVerona2022/main/docs/pizza_map.html))
 2. Rename it as "index.html" and place it in the main folder of your repository
