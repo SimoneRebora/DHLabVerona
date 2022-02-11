@@ -1,7 +1,7 @@
 # Push a repository
 
 If **you** changed the repository files on your computer and you want to commit your local changes to the online GitHub repository, you need to do first some security setups.  
-These are setups you will need to do just once!
+*These are setups you will need to do just once!*
 
 #### 1. Create a token
 Before doing any commit from your computer, you need to create a personal access token (this is for security reasons).
