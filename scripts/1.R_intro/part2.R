@@ -8,12 +8,13 @@
 
 # printing working directory
 getwd()
-setwd("/cloud/project/corpus") # notice that this can also be done via the RStudio GUI
+setwd("samples") # notice that this can also be done via the RStudio GUI
 getwd()
-setwd("/cloud/project")
+setwd("..") # then go back to the previous (mother) directory
+getwd()
 
 # read text line by line
-my_text <- readLines("corpus/Cbronte_Jane_1847.txt")
+my_text <- readLines("samples/Cbronte_Jane_1847.txt")
 head(my_text)
 
 # collapse all text in a single line (separated by the "newline" character)
@@ -23,17 +24,38 @@ my_text <- paste(my_text, collapse = "\n")
 cat("The cat is on the table")
 cat("The cat is on the table", file = "Cat.txt")
 
+### Your Turn (1) - start
+
+# read the other .txt file in the "samples" folder (Doyle) and split it into single words 
+# please write the code immediately down here (in the empty space) 
+# save the file, and then push to the GitHub repo 
+
+
+
+### Your Turn (1) - end
+
 #### 2. Reading/writing tables
 
 # create a dataframe
 my_df <- data.frame(author = c("Shakespeare", "Dante", "Cervantes", "Pynchon"), nationality = c("English", "Italian", "Spanish", "American"))
 # write it to file
-write.csv(my_df, file = "Authors.csv")
+write.csv(my_df, file = "samples/Authors.csv")
 
 # read the file back to another dataframe
-my_authors <- read.csv("Authors.csv")
+my_authors <- read.csv("samples/Authors.csv")
 # there is a column too much! Improve it:
-my_authors <- read.csv("Authors.csv", row.names = 1)
+my_authors <- read.csv("samples/Authors.csv", row.names = 1)
+
+### Your Turn (2) - start
+
+# read the other .csv file in the "samples" folder and find the Italian author(s) 
+# please write the code immediately down here (in the empty space) 
+# save the file, and then push to the GitHub repo 
+
+
+
+### Your Turn (2) - end
+
 
 #### 3. Making loops
 
@@ -91,7 +113,7 @@ my_list
 
 # advanced loop: read files in a folder
 # first, find all file names
-my_files <- list.files("corpus", full.names = T)
+my_files <- list.files(path = "samples", full.names = T, pattern = ".txt") # note that pattern is used to list just .txt files (so not the .csv ones in the folder)
 my_files
 
 # second, create an empty variable where to store the results
@@ -106,12 +128,23 @@ for(i in 1:length(my_files)){
   my_text_tmp <- paste(my_text_tmp, collapse = "\n")
   
   my_texts[i] <- my_text_tmp
-  names(my_texts)[i] <- gsub(pattern = "corpus/|.txt", replacement = "", my_files[i])
+  names(my_texts)[i] <- gsub(pattern = "samples/|.txt", replacement = "", my_files[i])
 
 }
 
 # not ideal! ...but just for the visualization
 my_df <- as.data.frame(my_texts)
+View(my_df)
+
+### Your Turn (3) - start
+
+# read the two .csv files in the "samples" folder using a loop like the one above 
+# please write the code immediately down here (in the empty space) 
+# save the file, and then push to the GitHub repo 
+
+
+
+### Your Turn (3) - end
 
 #### 4. Functions
 
@@ -125,7 +158,7 @@ my_function()
 # a practical case
 read_corpus <- function(x){
   
-  my_files <- list.files(x, full.names = T)
+  my_files <- list.files(path = x, full.names = T, pattern = ".txt")
   my_texts <- character()
   
   for(i in 1:length(my_files)){
@@ -144,7 +177,17 @@ read_corpus <- function(x){
 
 }
 
-my_texts_2 <- read_corpus("corpus")
+my_texts_2 <- read_corpus("samples")
+
+### Your Turn (4) - start
+
+# write a function that reads the .csv files in the "samples" folder and prints how many Italians there are in each table 
+# please write the code immediately down here (in the empty space) 
+# save the file, and then push to the GitHub repo 
+
+
+
+### Your Turn (4) - end
 
 #### 5. Packages
 
@@ -174,13 +217,3 @@ my_df_2 <- data.frame(author <- c("Shakespeare", "Dante", "Cervantes", "Pynchon"
 author # now it exists!!
 
 # for more details (and discussion): https://stackoverflow.com/questions/1741820/what-are-the-differences-between-and-assignment-operators-in-r 
-
-### Your turn!!
-# Suggested activities: 
-# 1. create a new version of Jane Eyre where all "J"s are substituted by "K"s and save it to a new file (i.e. "Kane_Eyre.txt"). Tip: look into the gsub() function above. In case of doubts, you can always use the "help" panel on the right
-# 2. modify the read_corpus() function so that it reads just the novels by Virginia Woolf
-# 3. write an endless loop using the while() function (...but do not run it! :)
-# 4. write a loop that reads all files in the "corpus" folder and prints how many words they contain
-# 5. write a loop that reads all files in the "corpus" folder and prints how many "k"s they contain
-
-# Or... freely discuss about your doubts, try ideas, experiment, etc.
