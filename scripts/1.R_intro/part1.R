@@ -80,6 +80,16 @@ my_df$author == "Dante"
 which(my_df$author == "Dante")
 my_df$nationality[which(my_df$author == "Dante")]
 
+### Your Turn (2) - start
+
+# find the author who has "Spanish" nationality
+# please write the code immediately down here (in the empty space) 
+# save the file, and then push to the GitHub repo 
+
+
+
+### Your Turn (2) - end
+
 ### 3. Manipulating variables
 my_first_vector+1
 my_first_vector[2]+1
@@ -97,12 +107,12 @@ table(my_third_vector)
 sort(table(my_third_vector))
 sort(table(my_third_vector), decreasing = T)
 
-### Your turn!!
-# Suggested activities: 
-# 1. what happens if I sum/multiply a numeric vector by one number? Why?
-# 2. what happens if I sum/multiply two numeric vectors? Why?
-# 3. increase the "my_df" dataframe with more authors and info (e.g. date of birth)
-# 4. modify one entry in the "my_df" dataframe (e.g. Dante is Florentin, not Italian)
-# 5. how do I use strsplit() to split a sting into its single characters? Tip (that is valid in any case!): look into the "help" panel on the right
+### Your Turn (3) - start
 
-# Or... freely discuss about your doubts, try ideas, experiment, etc.
+# how do I use strsplit() to split a sting into its single characters? Tip (that is valid in any case!): look into the "help" panel on the right
+# please write the code immediately down here (in the empty space) 
+# save the file, and then push to the GitHub repo 
+
+
+
+### Your Turn (3) - end
