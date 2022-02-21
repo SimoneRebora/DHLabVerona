@@ -5,7 +5,7 @@
 - Windows: [https://cran.r-project.org/bin/windows/base](https://cran.r-project.org/bin/windows/base)
 - Mac: [https://cran.r-project.org/bin/macosx](https://cran.r-project.org/bin/macosx) 
   - to avoid issues with the Stylo package, you have to install [XQuartz](https://www.xquartz.org/) before installing R
-- Linux (command line): $ sudo apt install r-base-core
+- Linux (command line): `sudo apt install r-base-core`
 
 ## 2. Install RStudio
 
