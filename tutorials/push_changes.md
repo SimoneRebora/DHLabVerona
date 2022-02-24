@@ -31,3 +31,6 @@ Of course, you will have to substitute "my_github_username" and "my_github_email
 
 To verify that the identity has been correctly configured, you can call the command: `git config --list`
 
+#### Tip
+
+Some machines won't memorize the token. One way to do it, is to call in the Terminal the command `git config --global credential.helper cache` (which will save username/token to the cache)
