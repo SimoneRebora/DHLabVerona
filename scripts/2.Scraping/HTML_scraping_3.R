@@ -1,7 +1,6 @@
 # HTML_scraping_3
 # Archive of Our Own (https://archiveofourown.org)
 
-library(tidyverse)
 library(rvest)
 
 # define fandom page
