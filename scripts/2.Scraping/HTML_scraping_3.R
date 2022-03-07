@@ -85,3 +85,14 @@ my_df$incipit <- substr(all_texts, 1, 100)
 # save all
 save(my_df, all_texts, file = "corpora/AO3_corpus.RData")
 
+
+
+### Your Turn (1) - start
+
+# try to scrape another fandom by also adding more info to the dataframe, e.g. the likes (kudos) 
+# please write the code immediately down here (in the empty space) 
+# save the file, and then push to the GitHub repo 
+
+
+
+### Your Turn (1) - end
