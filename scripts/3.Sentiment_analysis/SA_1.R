@@ -4,9 +4,10 @@
 install.packages("syuzhet")
 library(syuzhet)
 
-library(tidyverse)
+install.packages("reshape2")
 library(reshape2)
 
+library(tidyverse)
 # Basic emotions in reviews 
 
 # load corpus

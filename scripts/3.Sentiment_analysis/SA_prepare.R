@@ -4,6 +4,7 @@
 install.packages("cld2")
 library(cld2)
 
+install.packages("tidyverse")
 library(tidyverse)
 
 # 1. Goodreads
