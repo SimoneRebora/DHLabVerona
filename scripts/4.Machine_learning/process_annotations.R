@@ -21,14 +21,16 @@ for(i in 1:length(tablesA)){
   
 }
 
-# convert values (0,1-1) into polarities
+# re-establish annotation order
 df_A <- df_A[order(df_A$X),]
+df_B <- df_B[order(df_B$X),]
+
+# convert values (0,1-1) into polarities
 df_A$polarity[which(df_A$polarity == "0")] <- "neutral"
 df_A$polarity[which(df_A$polarity == "1")] <- "positive"
 df_A$polarity[which(df_A$polarity == "-1")] <- "negative"
 table(df_A$polarity)
 
-df_B <- df_B[order(df_B$X),]
 df_B$polarity[which(df_B$polarity == "0")] <- "neutral"
 df_B$polarity[which(df_B$polarity == "1")] <- "positive"
 df_B$polarity[which(df_B$polarity == "-1")] <- "negative"
