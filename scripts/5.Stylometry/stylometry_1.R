@@ -46,6 +46,14 @@ head(my_texts[[2]])
 results_stylo <- stylo(parsed.corpus = my_texts)
 # Note: the results of the analysis have been saved in a variable called "stylo_results"
 
+# cleanup working files
+unlink(c("*.txt", "*.csv"))
+
+# move plot to figures folder
+my_files <- list.files(pattern = ".png")
+file.copy(my_files, "figures/5.Stylometry/", recursive = T)
+unlink(my_files)
+
 # Part 2. Explore
 
 results_stylo$distance.table
