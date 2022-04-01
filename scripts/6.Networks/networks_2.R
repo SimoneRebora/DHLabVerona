@@ -2,15 +2,16 @@
 
 library(tidyverse)
 
+# read tweets on "vaccino" 
 my_df <- read.csv("corpora/tweets_vaccino.csv", stringsAsFactors = F)
 
-# how many tweets were retweeted?
+# how many tweets were retweets?
 length(which(!is.na(my_df$referenced_tweets.retweeted.id)))
 
-# how many tweets were retweeted (from tweets present in our selection)?
+# how many tweets were retweets (of tweets present in our selection)?
 length(which(my_df$referenced_tweets.retweeted.id %in% my_df$id))
 
-# reduce just to tweets that are retweeted inside of my dataset
+# reduce just to tweets that are retweets/retweeted inside of my dataset
 my_df <- my_df %>% filter(referenced_tweets.retweeted.id %in% id |
                             id %in% referenced_tweets.retweeted.id)
 
@@ -34,7 +35,12 @@ nodes_df <- rbind(tweets_df, users_df)
 
 # build edges table
 authoring_df <- data.frame(Source = my_df$author_id, Target = my_df$id, Weight = 1, Type = "directed")
-retweeting_df <- data.frame(Source = my_df$referenced_tweets.retweeted.id[!is.na(my_df$referenced_tweets.retweeted.id)], Target = my_df$id[!is.na(my_df$referenced_tweets.retweeted.id)], Weight = 1, Type = "directed")
+retweeting_df <- data.frame(Source = my_df$id, Target = my_df$referenced_tweets.retweeted, Weight = 1, Type = "directed")
+
+# remove NAs (i.e. the two tweets that are not retweets)
+which(is.na(retweeting_df$Target))
+
+retweeting_df <- retweeting_df[-which(is.na(retweeting_df$Target)),]
 
 edges_df <- rbind(authoring_df, retweeting_df)
 
