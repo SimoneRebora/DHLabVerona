@@ -1,5 +1,5 @@
 # DHLabVerona
-Materials for the *Advanced Digital Humanities Lab* at the University of Verona.
+Materials and [slides](https://simonerebora.github.io/DHLabVerona/#/) for the *Advanced Digital Humanities Lab* at the University of Verona.
 
 ## Learning outcomes
 
