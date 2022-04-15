@@ -1,0 +1,8 @@
+"","adminCode1","lng","geonameId","toponymName","countryId","fcl","population","countryCode","name","fclName","adminCodes1.ISO3166_2","countryName","fcodeName","adminName1","lat","fcode","text"
+"1","NY","-74.00597","5128581","New York City","6252001","P","8804190","US","New York","city, village,...","NY","United States","populated place","New York","40.71427","PPL","New York"
+"2","20","10.98444","3164527","Verona","3175395","P","219103","IT","Verona","city, village,...","34","Italy","seat of a second-order administrative division","Veneto","45.4299","PPLA2","Verona"
+"3","16","13.41053","2950159","Berlin","2921044","P","3426354","DE","Berlin","city, village,...","BE","Germany","capital of a political entity","Berlin","52.52437","PPLC","Berlin"
+"4","21","-43.18223","3451190","Rio de Janeiro","3469034","P","6023699","BR","Rio de Janeiro","city, village,...","RJ","Brazil","seat of a first-order administrative division","Rio de Janeiro","-22.90642","PPLA","Rio de Janeiro"
+"5","00","12.83333","3175395","Italian Republic","3175395","A","60431283","IT","Italy","country, state, region,...",NA,"Italy","independent political entity","","42.83333","PCLI","Italy"
+"6","00","-98.5","6252001","United States","6252001","A","327167434","US","United States","country, state, region,...",NA,"United States","independent political entity","","39.76","PCLI","USA"
+"7","02","146.51199","8802596","My Home","2077456","S","0","AU","My Home","spot, building, farm","NSW","Australia","homestead","New South Wales","-35.4227","HMSD","my home"
