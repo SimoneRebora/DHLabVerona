@@ -44,5 +44,12 @@ for(i in 1:length(result)){
 # visualize the result
 View(my_geonames)
 
+# count entries
+my_geonames_count <- my_geonames %>%
+  group_by(lat, lng, name, text) %>%
+  count()
+
 # save results to a csv
-write.csv(my_geonames, file = "corpora/harrypotter_geonames.csv")
+write.csv(my_geonames_count, file = "corpora/harrypotter_geonames.csv")
+
+# eventually: manually clean/correct
